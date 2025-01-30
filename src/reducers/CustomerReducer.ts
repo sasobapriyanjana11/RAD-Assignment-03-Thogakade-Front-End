@@ -60,7 +60,6 @@ export const deleteCustomer = createAsyncThunk(
         }
     }
 )
-
 //create slice
 const customerSlice = createSlice({
     name:'customer',
