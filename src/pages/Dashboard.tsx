@@ -10,7 +10,7 @@ export function Dashboard() {
         <div className=" md-8">
             <h1 className="text-3xl font-medium text-purple-500 mb-6 text-my">Dashboard</h1>
             <div  className="p-6 grid grid-cols-2" >
-                {/* left  */}
+                {/*customer table*/}
                 <div>
                     <h1 className="text-3xl font-medium text-purple-500 mb-6">Customer Details</h1>
                     <table className=" table-auto border cellPadding-8 marginTop-20px w-full">
@@ -34,6 +34,7 @@ export function Dashboard() {
                         </tbody>
                     </table>
                 </div>
+                {/* item cards */}
                 <div>
                     <div className="item-card ml-5">
                         <h1 className="text-3xl font-medium text-purple-500 mb-6">Item Details</h1>
