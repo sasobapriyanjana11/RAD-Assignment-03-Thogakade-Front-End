@@ -47,7 +47,7 @@ export function Customers() {
     setEmail(customers.Email);
     setIsEditing(true);
   }
-
+//add customer
   function handleAdd  (){
     const newCustomer = new Customer(CustomerId, Name, Address, Email);
     dispatch(saveCustomer(newCustomer));
@@ -60,7 +60,7 @@ export function Customers() {
     resetForm();
   }
 
-
+//edit
   function handleEdit  (){
     const updatedCustomer = new Customer(CustomerId, Name, Address, Email);
     dispatch(UpdateCustomer(updatedCustomer));
@@ -70,7 +70,7 @@ export function Customers() {
     getCustomers();
 
   }
-
+//delete customer
   function handleDelete(Email: string) {
     dispatch(deleteCustomer(Email))
         .unwrap()

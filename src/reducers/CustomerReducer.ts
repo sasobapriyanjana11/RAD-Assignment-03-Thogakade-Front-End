@@ -12,7 +12,6 @@ const api = axios.create({
 
 });
 
-
 export const saveCustomer =createAsyncThunk(
     'customer/saveCustomer',
     async (customer:Customer)=>{
@@ -60,6 +59,7 @@ export const deleteCustomer = createAsyncThunk(
         }
     }
 )
+
 //create slice
 const customerSlice = createSlice({
     name:'customer',
