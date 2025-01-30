@@ -12,7 +12,7 @@ const api = axios.create({
 });
 
 
-
+//save items
 export const saveItem = createAsyncThunk(
     'item/saveItem',
     async (item:Item)=>{
@@ -25,7 +25,7 @@ export const saveItem = createAsyncThunk(
     }
 )
 
-
+//get items
 export const getItems = createAsyncThunk(
     'item/getItem',
     async ()=>{
@@ -38,7 +38,7 @@ export const getItems = createAsyncThunk(
     }
 )
 
-
+//delete item by id
 export const deleteItem = createAsyncThunk(
     'item/deleteItem',
     async (ItemId:string)=>{
@@ -50,7 +50,7 @@ export const deleteItem = createAsyncThunk(
         }
     }
 )
-
+//update item
 export const UpdateItem =createAsyncThunk(
     'item/updateItem',
     async (item:Item)=>{

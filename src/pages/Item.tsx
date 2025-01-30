@@ -37,7 +37,7 @@ export function Items() {
   };
 
 
-
+//add items
   function handleAdd ()  {
     const newItem = new Item(
         lastItemId + 1,
@@ -56,7 +56,7 @@ export function Items() {
     resetForm();
     navigate("/");
   }
-
+//delete items
   function handleDelete(ItemId : number) {
     dispatch(deleteItem(ItemId))
         .unwrap()
@@ -83,6 +83,8 @@ export function Items() {
     setIsEditing(true);
 
   }
+
+  //edit
   function handleEdit() {
     const updateItem = new Item(ItemId,Name,Quantity,Price);
     dispatch(UpdateItem(updateItem));
